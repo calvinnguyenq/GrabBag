@@ -18,7 +18,9 @@ namespace BaggagePinger
             
             string constr = WebConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString;
             SqlConnection con = new SqlConnection(constr);
-            con.Open();
+            try
+            {
+                con.Open();
             SqlCommand cmd = new SqlCommand("select * from baggageData where username = '" + name1 + "' ", con);
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -26,10 +28,14 @@ namespace BaggagePinger
             cmd.ExecuteNonQuery();
             this.textName.Text = dt.Rows[0][1].ToString() + " " + dt.Rows[0][2].ToString() + " " + dt.Rows[0][3].ToString();
             this.numBagsLabel.Text = dt.Rows[0][6].ToString();
-            this.weightLabel.Text = dt.Rows[0][8].ToString();
+            this.weightLabel.Text = dt.Rows[0][7].ToString();
             this.checkInLabel.Text = dt.Rows[0][9].ToString();
             this.AtCarouselLabel.Text = dt.Rows[0][10].ToString();
-
+            }
+            catch (Exception ex)
+            {
+                Response.Write(ex.Message);
+            }
             //SqlDataReader reader = cmd.ExecuteReader();
             //System.Diagnostics.Debug.WriteLine(reader);
         }

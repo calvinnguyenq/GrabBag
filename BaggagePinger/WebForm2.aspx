@@ -68,13 +68,13 @@
             &nbsp;</p>
         <table class="auto-style2" align="center">
             <tr>
-                <td class="auto-style13"><strong>Number of Bags:</strong></td>
+                <td class="auto-style13"><strong>Departure:</strong></td>
                 <td class="auto-style14">
                     <asp:Label ID="numBagsLabel" runat="server" CssClass="auto-style8"></asp:Label>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style13"><strong>Weights (kg):</strong></td>
+                <td class="auto-style13"><strong>Arrival:</strong></td>
                 <td class="auto-style14">
                     <asp:Label ID="weightLabel" runat="server" CssClass="auto-style8"></asp:Label>
                 </td>
