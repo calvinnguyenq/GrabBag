@@ -7,70 +7,87 @@
     <title></title>
 
     <style type="text/css">
-        body {background-color: #8AD0F5;} 
+        body {
+            background-image: url('images/14561.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
         .auto-style1 {
+            background-color: white;
+            color:royalblue;
+            font-family: Arial;
             font-size: xx-large;
             text-align: center;
-            width: 807px;
-            margin-left: 505px;
+            width: 729px;
+            margin-left: 2px;
+            height: 51px;
+            text-decoration: underline;
         }
         .auto-style2 {
+            background-color: white;
+            font-family: Arial;
             width: 100%;
-            height: 135px;
+            height: 199px;
         }
         .auto-style3 {
+            background-color: white;
             height: 49px;
             width: 937px;
         }
         .auto-style10 {
-            height: 50px;
+            background-color: white;
+            height: 51px;
             width: 937px;
         }
         .auto-style11 {
+            background-color: white;
             height: 49px;
-            width: 178px;
+            width: 684px;
         }
         .auto-style12 {
-            height: 50px;
-            width: 178px;
+            background-color: white;
+            height: 51px;
+            width: 684px;
+            text-align: center;
         }
         .auto-style13 {
+            background-color: white;
             height: 49px;
             width: 684px;
-        }
-        .auto-style14 {
-            height: 50px;
-            width: 684px;
+            text-align: center;
         }
     </style>
 </head>
-<body>
+<body style="width: 733px; height: 256px; margin-left: 472px; margin-top: 219px">
     <form id="form1" runat="server">
         <div class="auto-style1" style="margin-top: 0px">
-            <strong>Login Form</strong></div>
+            <strong>Login </strong></div>
         <table class="auto-style2">
             <tr>
-                <td class="auto-style13">&nbsp;</td>
-                <td class="auto-style11"><strong>Username</strong></td>
+                <td class="auto-style13"><strong>Username</strong></td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="txtuser" runat="server" Width="220px"></asp:TextBox>
+                    <asp:TextBox ID="txtuser" runat="server" Width="346px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style14"></td>
                 <td class="auto-style12"><strong>Password</strong></td>
                 <td class="auto-style10">
-                    <asp:TextBox ID="txtpass" runat="server" Width="220px"></asp:TextBox>
+                    <asp:TextBox ID="txtpass" runat="server" Width="345px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style13">&nbsp;</td>
                 <td class="auto-style11"></td>
                 <td class="auto-style3">
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Login" Width="159px" />
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Login" Width="232px" />
                 </td>
             </tr>
         </table>
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>
+
+
+
+

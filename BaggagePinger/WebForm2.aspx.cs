@@ -43,5 +43,10 @@ namespace BaggagePinger
         {
 
         }
+
+        protected void logoutButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Webform1.aspx");
+        }
     }
 }
